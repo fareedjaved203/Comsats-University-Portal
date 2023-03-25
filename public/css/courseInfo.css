@@ -1,0 +1,47 @@
+.table-data {
+    cursor: pointer;
+}
+
+.body {
+    cursor: pointer;
+    width: 70% !important;
+    height: 180px;
+    background-color: #27104e;
+    color: white;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.body:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    .body {
+        width: 40% !important;
+        height: 140px;
+        margin: 10px;
+    }
+}
+.fa,
+.fas {
+    font-family: "FontAwesome";
+}
+
+.social-icon {
+    color: #fff;
+    border: none;
+    line-height: 1;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+.social-icon:hover {
+    color: goldenrod;
+}
+
+li:hover {
+    transform: translateY(-4px);
+    transition: 0.3s;
+}

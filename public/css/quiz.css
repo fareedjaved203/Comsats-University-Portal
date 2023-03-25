@@ -1,0 +1,250 @@
+:root {
+    background-color: #ecf5ff;
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+html {
+    font-size: 62.5%;
+}
+h2 {
+    font-size: 6.2rem;
+    margin-bottom: 6rem;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.flex-column2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center2 {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center2 {
+    justify-content: center;
+}
+
+.text-center2 {
+    text-align: center;
+}
+
+.hidden2 {
+    display: none;
+}
+.container2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.container2 > * {
+    width: 100%;
+}
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgb(86, 165, 235, 0.25);
+    background-color: white;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.choice-container p {
+    margin-bottom: 0 !important;
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: #27104e;
+    color: white;
+}
+
+.choice-text {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.correct {
+    background-color: #28a745;
+}
+
+.incorrect {
+    background-color: #dc3545;
+}
+
+/* HUD */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+    color: #27104e;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #27104e;
+    margin-top: 1.5rem;
+}
+
+#progressBarFull {
+    height: 100%;
+    background-color: #27104e;
+    width: 0%;
+}
+
+/* LOADER */
+#loader {
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid #27104e;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.nav-item:hover {
+    background-color: #64379f;
+}
+.navbar {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.nav-item {
+    padding: 1.6rem;
+    font-size: 1.9rem;
+}
+.navbar-brand {
+    width: 50%;
+}
+.navbar-brand img {
+    transform: scale(2.8);
+    overflow: hidden;
+}
+.showcase {
+    background-color: #64379f;
+}
+.showcase2 {
+    background-color: white;
+}
+.img-section {
+    max-width: 80% !important;
+    position: absolute;
+    top: 12%;
+    left: 20%;
+}
+.player-holder {
+    height: 250px;
+    max-width: 550px;
+    background: transparent;
+    text-align: center;
+}
+.player-thumb {
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-image: url(http://www.whatcar.com/car-leasing/images/vehicles/medium/100895.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.enrollBtn {
+    transform: translateY(2);
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+.welcome {
+    font-size: 4rem !important;
+}
+@media (max-width: 992px) and (min-width: 768px) {
+    .img-section {
+        position: absolute;
+        top: 15%;
+    }
+}
+@media (max-width: 992px) {
+    .navbar-brand {
+        margin: 10px 0 10px 30px;
+    }
+    .navbar-brand img {
+        transform: scale(5);
+    }
+}
+@media (max-width: 768px) {
+    .welcome {
+        font-size: 2.8rem !important;
+    }
+    .img-section {
+        position: absolute;
+        left: 0;
+        max-width: 100% !important;
+    }
+    .container2 {
+        margin-top: 100px;
+    }
+}
+@media (max-width: 768px) {
+    .container2 {
+        margin-top: 100px;
+    }
+}
+.fa,
+.fas {
+    font-family: "FontAwesome";
+}
+
+.social-icon {
+    color: #fff;
+    border: none;
+    line-height: 1;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+.social-icon:hover {
+    color: goldenrod;
+}
+
+li:hover {
+    transform: translateY(-4px);
+    transition: 0.3s;
+}

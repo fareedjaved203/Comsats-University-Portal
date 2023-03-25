@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+
+:root {
+    --color-main: #1a202e;
+}
+html,
+body {
+    background-image: url("aboutback.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    height: 100%;
+    width: 350px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    /* padding-left: 30px; */
+    /* padding-right: 30px; */
+    border: 4px solid rgb(6, 6, 6);
+    /* margin: 5px; */
+    padding-right: 2px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    /* color: #818181; */
+    display: block;
+    transition: 0.3s;
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: black;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+.main-content {
+    margin-left: 280px;
+    transition: margin left 300ms;
+}
+
+.main-content {
+    margin-left: 280px;
+    transition: margin-left 300ms;
+}
+
+main {
+    padding: 1.5rem;
+    background: rgb(214, 179, 211);
+    min-height: calc(100vh - 90vh);
+    /* margin-top: 70px; */
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-actions button {
+    outline: none;
+    background: #8a1e8e;
+    border: 2px solid #555;
+    padding: 0.6rem 1rem;
+    margin-left: 1rem;
+    border-radius: 3px;
+    font-weight: 600;
+    color: #fff;
+}
+.header-actions button span {
+    font-size: 1.3rem;
+    margin-right: 0.6rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    height: 150px;
+}
+
+.cards-single {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+.cards-flex {
+    display: grid;
+    grid-template-columns: 70% auto;
+    align-items: center;
+}
+
+.cards-head span {
+    font-style: italic;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+    color: rgb(24, 24, 24);
+    font-size: 24px;
+}
+
+.cards-head small {
+    font-weight: 600;
+    color: #555;
+}
+
+.cards-info h3 {
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.cards-chart span {
+    font-size: 5rem;
+}
+
+.cards-chart.success span {
+    color: seagreen;
+}
+
+.cards-chart.danger span {
+    color: tomato;
+}
+
+.cards-chart.yellow span {
+    color: rgb(126, 55, 28);
+}
+
+.jobs-grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: auto 65%;
+    grid-gap: 2rem;
+}
+
+.analytics-card {
+    background: #fff;
+    padding: 1.5rem;
+}
+
+.analytics-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.analytics-head span {
+    font-size: 60px;
+}
+
+.analytics-chart small {
+    font-weight: 600;
+    color: rgb(65, 27, 27);
+    display: block;
+    margin-bottom: 4rem;
+}
+
+.chart-circle {
+    height: 200px;
+    margin-bottom: 5rem;
+    width: 200px;
+    bottom: 0;
+    border-left: 25px solid;
+    border-right: 25px solid #8b227d;
+    border-bottom: 10px solid #8b227d;
+    border-top: 10px solid #8b227d;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    border-radius: 55%;
+}
+
+.analytics-card button {
+    display: block;
+    padding: 0.6rem 1rem;
+    width: 100%;
+    height: 45px;
+    color: #fff;
+    border: 1px solid #8b227d;
+    border-radius: 3px;
+    background: #8b227d;
+}
+
+.jobs h3 small {
+    color: #8b227d;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+span.indicator {
+    background: #883878;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+span.indicator.even {
+    background: #883878;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.cardd-head {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+#sidebar-toggle {
+    display: none;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1124px) {
+    .sidebar {
+        left: -100;
+        z-index: 30;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+    header {
+        left: 0;
+        width: 100%;
+    }
+    #sidebar-toggle:checked ~ .sidebar {
+        left: 0;
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    /* .cards{
+        grid-template-columns: 100%;
+    } */
+
+    .jobs-grid {
+        grid-template-columns: 100%;
+    }
+
+    .page-header {
+        display: block;
+    }
+    .header-actions {
+        margin-top: 1rem;
+        text-align: right;
+    }
+    .header-actions button:first-child {
+        margin-left: 0 rem;
+    }
+}
+
+/* >>>>>>>>>>---------Student/Lecturer Details---------<<<<<<<<<<< */
+.form_page {
+    padding-top: 2.5%;
+}
+
+.row.single-form {
+    box-shadow: 0 20px 20px -5px rgba(0, 0, 0, 0.5);
+    background: rgb(233, 184, 224);
+}
+
+.left {
+    /* background: rgb(214, 154, 202); */
+    padding: 200px 93px;
+    background-image: url(Details-Page.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.left h2 {
+    font-family: poppins;
+    color: rgb(134, 44, 83);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.left h2 span {
+    font-weight: 100;
+    padding: 70px 100px;
+    position: relative;
+}
+
+.right {
+    padding: 70px 100px;
+    position: relative;
+}
+.right i {
+    position: absolute;
+    font-size: 80px;
+    left: -27px;
+    top: 40%;
+    color: #fff;
+}
+
+.form-control {
+    border: 2px solid #000;
+}
+
+.right button {
+    align-items: center;
+    border: none;
+    border-radius: 0;
+    background: #ac5c9c;
+    width: 130px;
+    padding: 15px 0;
+    color: rgb(239, 203, 203);
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.right button:hover {
+    background: #e9c6c6;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .right i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .left {
+        padding: 90px 15px;
+        text-align: center;
+    }
+    .left h2 {
+        font-size: 25px;
+    }
+    .right {
+        padding: 25px;
+    }
+    .right i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 45%;
+    }
+    right-button {
+        width: 150px;
+        padding: 12px 0;
+    }
+}
+
+/* >>>>>>>>>>>>------Lecturer Contact------<<<<<<<<<<<< */
+.left-img {
+    position: relative;
+    top: 90px;
+}
+.left-img p {
+    justify-content: space-between;
+    font-size: 24px;
+    font-style: italic;
+}
+.right-side {
+    padding: 70px 100px;
+    position: relative;
+}
+
+.right-side h2 {
+    text-align: center;
+    font-size: 40px;
+    top: 2000px;
+}
+
+.right-side button {
+    align-items: center;
+    border: none;
+    border-radius: 0;
+    background: #ac5c9c;
+    width: 130px;
+    padding: 15px 0;
+    color: rgb(239, 203, 203);
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* >>>>>>>>>>>>--------Student Table-----------<<<<<<<<<<<< */
+
+.table_set h1 {
+    text-align: center;
+    font-style: italic;
+}
+.table_set {
+    padding: 5%;
+}
+
+/* button{
+    font-style: italic;
+    background: #883878;
+} */
+
+.btn a {
+    position: relative;
+    left: 540px;
+    top: 30px;
+    font-size: large;
+    color: rgb(173, 88, 139);
+}
+.fa,
+.fas {
+    font-family: "FontAwesome";
+}
+
+.social-icon {
+    color: #fff;
+    border: none;
+    line-height: 1;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+.social-icon:hover {
+    color: goldenrod;
+}
+
+li:hover {
+    transform: translateY(-4px);
+    transition: 0.3s;
+}

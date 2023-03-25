@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+.nav-item:hover {
+    background-color: #64379f;
+}
+.navbar {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.nav-item {
+    padding: 1.6rem;
+    font-size: 1.9rem;
+}
+.navbar-brand {
+    width: 50%;
+}
+.navbar-brand img {
+    transform: scale(2.8);
+    overflow: hidden;
+}
+.showcase {
+    background-color: #64379f;
+}
+.showcase2 {
+    background-color: white;
+}
+.img-section {
+    max-width: 80% !important;
+    position: absolute;
+    top: 12%;
+    left: 20%;
+}
+.player-holder {
+    height: 250px;
+    max-width: 550px;
+    background: transparent;
+    text-align: center;
+}
+.player-thumb {
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    border: 2px solid grey;
+    border-radius: 50%;
+    background-image: url(http://www.whatcar.com/car-leasing/images/vehicles/medium/100895.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.enrollBtn {
+    transform: translateY(2);
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+.welcome {
+    font-size: 4rem !important;
+}
+.bottom-container {
+    font-size: 1.8rem;
+}
+@media (max-width: 992px) and (min-width: 768px) {
+    .img-section {
+        position: absolute;
+        top: 15%;
+    }
+}
+@media (max-width: 992px) {
+    .navbar-brand {
+        margin: 10px 0 10px 30px;
+    }
+    .navbar-brand img {
+        transform: scale(5);
+    }
+}
+@media (max-width: 768px) {
+    .welcome {
+        font-size: 2.8rem !important;
+    }
+    .img-section {
+        position: absolute;
+        left: 0;
+        max-width: 100% !important;
+    }
+    .bottom-container {
+        margin-top: 120px;
+    }
+}
+.table-data {
+    cursor: pointer;
+}
+.fa,
+.fas {
+    font-family: "FontAwesome";
+}
+
+.social-icon {
+    color: #fff;
+    border: none;
+    line-height: 1;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+.social-icon:hover {
+    color: goldenrod;
+}
+
+li:hover {
+    transform: translateY(-4px);
+    transition: 0.3s;
+}

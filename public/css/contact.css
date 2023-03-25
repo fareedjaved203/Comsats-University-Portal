@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+/* .wrapper{ */
+/* width: 1400px;
+    height: 600px;
+    position: relative;
+    background-color:beige;
+    border-radius:5px;
+    left: 60px;
+    top: 54px; */
+/* } */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(aboutback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 40px 0;
+}
+
+.foooter-inner {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 24px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 340px;
+    border: none;
+}
+
+.title {
+    text-align: center;
+    font-size: 54px;
+}
+
+.btn a {
+    position: relative;
+    left: 1450px;
+    top: 10px;
+    font-size: large;
+    color: rgb(177, 80, 80);
+}
+
+.contact-text {
+    width: 100%;
+    height: auto;
+}
+
+.contact-text h1 {
+    font-size: 36px;
+    font-weight: 600px;
+    color: #aa598f;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.contact-text h2 {
+    font-size: 20px;
+    font-weight: 500px;
+    color: rgb(33, 33, 33);
+    margin: 0;
+    padding-top: 25px;
+}
+
+.contact-text h2 i {
+    color: #aa598f;
+}
+
+.contact-text p {
+    font-size: 14px;
+    font-weight: 100;
+    color: rgb(15, 15, 15);
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 24px;
+}
+
+.footer-mein {
+    width: 100%;
+    background: #aa598f;
+    height: auto;
+    padding: 30px 0;
+}
+
+.footer-social {
+    width: 100%;
+    height: auto;
+}
+
+.footer-social h3 {
+    font-size: 36px;
+    font-weight: 500p;
+    color: #fff;
+    margin: 0;
+    text-align: left;
+}
+
+.footer-social h3 span {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.social-innar {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.social-innar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.social-innar ul li {
+    float: left;
+    margin: auto;
+    list-style: none;
+    height: 100px;
+}
+
+.social-innar ul li a {
+    padding: 13px 20px;
+    font-size: 14;
+    color: #fff;
+    background: #000;
+}
+
+.form {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.form-style {
+    width: 300px;
+    height: 45px;
+    padding-left: 10px;
+    border: 1px solid #9999;
+    margin-top: -10px;
+}
+
+.from-submit {
+    width: 51px;
+    height: 45px;
+    /* background-color: #000; */
+    margin-top: -9px;
+}
+.social-innar ul li input {
+    width: 300px;
+    height: 45px;
+    padding-left: 10px;
+    border: 1px solid #aa598f;
+    margin-top: -10px;
+}
+
+.social-innar ul li button {
+    width: 51px;
+    height: 45px;
+    background: url();
+    border: none;
+    margin-top: -9px;
+}
+
+.footer-bottom {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #272727;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #fff;
+    padding: 8.5px 0;
+    font-weight: 100;
+    margin: 0;
+    text-decoration: none;
+}
+
+.footer-bottom p span {
+    font-size: 14px;
+}
+.footer-bottom p span {
+    font-size: 14px;
+}
+
+.footer-bottom p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 360px) and (max-width: 479px) {
+    .map iframe {
+        height: 150px;
+    }
+
+    .contact-text {
+        padding: 15px;
+    }
+    .contact-text h1 {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+    .contact-text h2 {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .contact-text p {
+        font-size: 12px;
+    }
+    .footer-social h3 {
+        font-size: 18px;
+    }
+    .footer-social h3 span {
+        font-size: 12px;
+    }
+    .social-innar {
+        text-align: center;
+    }
+    .social-innar ul li {
+        float: none;
+        display: inline-block;
+    }
+    .social-innar ul li a {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+    .form-style {
+        width: 260px;
+        padding-left: 10px;
+        margin-top: 0;
+        font-size: 12px;
+    }
+    .footer-bottom {
+        height: 60px;
+    }
+    .footer-bottom p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .pull-right {
+        float: none;
+    }
+}
+
+.fa,
+.fas {
+    font-family: "FontAwesome";
+}
+
+.social-icon {
+    color: #fff;
+    border: none;
+    line-height: 1;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+.social-icon:hover {
+    color: goldenrod;
+}
+
+li:hover {
+    transform: translateY(-4px);
+    transition: 0.3s;
+}
